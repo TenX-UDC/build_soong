@@ -256,6 +256,8 @@ def generate_build_info(args):
   print(f"persist.sys.pihooks_MODEL={config['PihooksGmsModel']}")
   print(f"persist.sys.pihooks_mainline_FINGERPRINT={config['PihooksBuildFp']}")
   print(f"persist.sys.pihooks_mainline_MODEL={config['PihooksBuildModel']}")
+ 
+  print(f"ro.tenx.device={config['LineageDevice']}")
 
   # These values are deprecated, use "ro.product.cpu.abilist"
   # instead (see below).
